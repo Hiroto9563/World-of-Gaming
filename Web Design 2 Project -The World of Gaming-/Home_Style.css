@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rajdhani:wght@400;700&display=swap');
+
+p {
+    background-color: #ffffff;
+    border-radius: 10px; 
+    padding: 3%; 
+    max-width: 80%;
+    margin: 20px auto; 
+    z-index: 1; 
+    position: relative;
+    font-size:large;
+    /*font-family: 'Press Start 2P', cursive;  Retro gaming font for titles */
+    /*font-family: 'Rajdhani', sans-serif;  Modern and clean for body text */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

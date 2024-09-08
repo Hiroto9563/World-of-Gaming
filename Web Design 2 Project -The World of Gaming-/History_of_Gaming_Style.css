@@ -1,0 +1,24 @@
+.Console {
+    background-color: #ffffff;
+    border-radius: 10px; 
+    padding: 3%; 
+    max-width: 80%;
+    margin: 20px auto; 
+    z-index: 1; 
+    position: relative;
+    font-size:large;
+    list-style: none;
+    word-wrap: break-word;
+    /*font-family: 'Press Start 2P', cursive;  Retro gaming font for titles */
+    /*font-family: 'Rajdhani', sans-serif;  Modern and clean for body text */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#Console_Text{
+    float: left;
+    text-align: left;
+    
+}
+#Console_Img{
+    width: 25%; 
+    float: right;
+}

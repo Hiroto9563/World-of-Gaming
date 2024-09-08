@@ -1,0 +1,17 @@
+.footer {
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.Head {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+}
+
+html {
+    background-image: url('Pictures/mario-level-background.jpg'); /* Replace with your actual image path */
+    background-repeat: repeat-x; /* Repeat horizontally */
+    background-position: center top; /* Center background horizontally */
+    background-color: #ffffff; /* Fallback color in case the image doesn't load */
+    max-width: 100%;
+}

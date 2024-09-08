@@ -1,0 +1,44 @@
+/* Mario-inspired color palette */
+.navbar-custom {
+    background-color: #ff4b4b; /* Mario's fiery red hat color */
+    padding: 10px; /* Add some padding for visual appeal */
+}
+
+.navbar-custom .nav-link {
+    color: #fff700; /* Bright yellow text like Mario's buttons */
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: none; /* Remove underlines from links */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.navbar-custom .nav-link:hover {
+    color: #00b000; /* Green like Luigi or Mario's fire flower */
+}
+
+/* To evenly space the nav items */
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    
+    list-style: none; /* Remove bullet points from list */
+}
+
+/* Optional: Style for active link */
+.navbar-custom .nav-item.active .nav-link {
+    color: #0099ff; /* Blue like Mario's overalls */
+    border-bottom: 2px solid #0099ff; /* Add a subtle underline */
+}
+
+/* Additional colors for bonus levels! */
+.navbar-custom .nav-link.special {
+    color: #ff8c00; /* Orange like a power-up mushroom */
+}
+
+.navbar-custom .nav-link.secret {
+    color: #800080; /* Purple like a hidden warp zone */
+}
+#Logo{
+    max-width: none;
+    width: 4000%;
+}
