@@ -1,0 +1,49 @@
+
+body {
+background-image: url('mario-level-background.jpg');
+background-repeat: no-repeat;
+background-position: center top;
+background-repeat: repeat-x; 
+max-width: 100%;
+}
+
+
+.mainBody {
+    background-color: black;
+    height: 1000px;
+    margin-top: 0px;
+}
+
+#firstMainBody {
+    margin-top: 125px;
+    }
+
+#firstMainBody1 {
+height: 150px;
+background-color: white;
+margin-top: 50px;
+border-radius: 10px;
+
+}
+
+#firstMainBody2 {
+    height: 150px;
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 10px;
+    
+}
+
+#firstMainBody3 {
+    height: 150px;
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+#firstMainBody4 {
+    height: 150px;
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 10px;
+}
