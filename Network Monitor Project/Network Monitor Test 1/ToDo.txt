@@ -1,0 +1,7 @@
+1. Fully implement nmap DONE
+2. Scan output should be dumped into csv file DONE
+3. Web portal
+4. Local scan should get current IP address of current network itself instead of requiring user input
+5. Implement Local MAC Table
+6. Alter Parse OUI file to split the reading into 8 or 9 files (Should only be scanned if a MAC Address is not within the local MAC Table). DONE
+7. Get PI working and run Linux code
