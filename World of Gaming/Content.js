@@ -1,9 +1,10 @@
 "use strict;"
-
-document.getElementById("worldOfConsoles").innerHTML = "<h2 class='text-primary text-center'>World of Consoles</h2><p class='text-muted'>The first offical console was the Magnovox Odyssey. This console was of similar size to an old CRT monitor. Sonic wouldve had a blast with it but he was released until 19 years later. The consoles of the past were far larger than todays, much like how games you could play were very limited in comparision. Despite these limitations, early consoles set in motion a movement that would result in motion one of the largest industries in the world. Take a look at the consoles of the past as well as those of the present and gain a deeper apprication of the history and growth that the systems we play on have undergone. </p>";
-document.getElementById("worldOfGames").innerHTML = "<h2 class='text-primary text-center'>World of Games</h2><p class='text-muted'>The first ever video game was Tennis for two and was created years before the first console. The machine it was played on was of similar size to your car. What about the first game played on a console? That would be 12 different games, but the most widly known would probably be Pong, or Ping-Pong. Nowadays titles such as The Legend of Zelda Tears of the Kingdom or the recently released Super Mario Dreamland are common place and as a result we have lost our appriciation of the classics. Learn more about how far video games have come and what kind of changes occured over the course of their development. Sometimes the classics are better. </p>";
-document.getElementById("ourPicks").innerHTML = "<h2 class='text-primary text-center'>Our Picks!</h2><p class='text-muted'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt quasi facilis sunt! Excepturi consequatur eos porro magnam nam dicta, mollitia unde illum at, accusantium delectus. Eos tempora saepe asperiores fugiat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsam dolorem architecto nam rerum labore explicabo mollitia quis cumque ratione, minus ipsa, culpa provident laboriosam impedit distinctio fuga sed earum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt atque error, nemo temporibus voluptas officiis quam inventore! Hic cumque, recusandae eos harum soluta amet qui laboriosam eveniet fugiat optio at.</p>";
-document.getElementById("whatsNew").innerHTML = "<h2 class='text-primary text-center'>What's New?</h2><p class='text-muted'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt quasi facilis sunt! Excepturi consequatur eos porro magnam nam dicta, mollitia unde illum at, accusantium delectus. Eos tempora saepe asperiores fugiat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsam dolorem architecto nam rerum labore explicabo mollitia quis cumque ratione, minus ipsa, culpa provident laboriosam impedit distinctio fuga sed earum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt atque error, nemo temporibus voluptas officiis quam inventore! Hic cumque, recusandae eos harum soluta amet qui laboriosam eveniet fugiat optio at.</p>";
+if (document.getElementById("worldofConsoles")) {
+    document.getElementById("worldOfConsoles").innerHTML = "<h2 class='text-primary text-center'>World of Consoles</h2><p class='text-muted'>The first offical console was the Magnovox Odyssey. This console was of similar size to an old CRT monitor. Sonic wouldve had a blast with it but he was released until 19 years later. The consoles of the past were far larger than todays, much like how games you could play were very limited in comparision. Despite these limitations, early consoles set in motion a movement that would result in motion one of the largest industries in the world. Take a look at the consoles of the past as well as those of the present and gain a deeper apprication of the history and growth that the systems we play on have undergone. </p>";
+    document.getElementById("worldOfGames").innerHTML = "<h2 class='text-primary text-center'>World of Games</h2><p class='text-muted'>The first ever video game was Tennis for two and was created years before the first console. The machine it was played on was of similar size to your car. What about the first game played on a console? That would be 12 different games, but the most widly known would probably be Pong, or Ping-Pong. Nowadays titles such as The Legend of Zelda Tears of the Kingdom or the recently released Super Mario Dreamland are common place and as a result we have lost our appriciation of the classics. Learn more about how far video games have come and what kind of changes occured over the course of their development. Sometimes the classics are better. </p>";
+    document.getElementById("ourPicks").innerHTML = "<h2 class='text-primary text-center'>Our Picks!</h2><p class='text-muted'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt quasi facilis sunt! Excepturi consequatur eos porro magnam nam dicta, mollitia unde illum at, accusantium delectus. Eos tempora saepe asperiores fugiat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsam dolorem architecto nam rerum labore explicabo mollitia quis cumque ratione, minus ipsa, culpa provident laboriosam impedit distinctio fuga sed earum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt atque error, nemo temporibus voluptas officiis quam inventore! Hic cumque, recusandae eos harum soluta amet qui laboriosam eveniet fugiat optio at.</p>";
+    document.getElementById("whatsNew").innerHTML = "<h2 class='text-primary text-center'>What's New?</h2><p class='text-muted'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt quasi facilis sunt! Excepturi consequatur eos porro magnam nam dicta, mollitia unde illum at, accusantium delectus. Eos tempora saepe asperiores fugiat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsam dolorem architecto nam rerum labore explicabo mollitia quis cumque ratione, minus ipsa, culpa provident laboriosam impedit distinctio fuga sed earum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt atque error, nemo temporibus voluptas officiis quam inventore! Hic cumque, recusandae eos harum soluta amet qui laboriosam eveniet fugiat optio at.</p>";
+}
 
 Consoles = [
     ["1972 - Magnavox Odyssey ","The Magnavox Odyssey was the first-ever home console. It was created by Sanders Associates and sold 350,000 units by the time it was discontinued in 1975. ","https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Magnavox-Odyssey-Console-Set.jpg/330px-Magnavox-Odyssey-Console-Set.jpg"],
@@ -31,7 +32,7 @@ Consoles = [
     ["2005 - Xbox 360","The Xbox 360 was the 9th best-selling console in history. It would have sold more units had it not been for supply issues during the first year of its release.","https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Xbox-360S-Console-Set.jpg/128px-Xbox-360S-Console-Set.jpg"],
     ["2006 - Wii","The Wii was created to focus on appealing to a broader audience with casual gameplay instead of competing with the Sony and Sega. ","https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Wii-Console.png/330px-Wii-Console.png"],
     ["2011 - Nintendo 3DS","The Nintendo 3DS started at a price of $249.99 but they dropped the price to $169.99 after poor sales after launch. ","https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Nintendo-3DS-AquaOpen.jpg/330px-Nintendo-3DS-AquaOpen.jpg"],
-    ["2012 - Wii U","The Wii U was the first Nintendo console to sport HD graphics. It was created to compete with the Xbox 360 and Playstation 3.","https://en.wikipedia.org/wiki/Wii_U"],
+    ["2012 - Wii U","The Wii U was the first Nintendo console to sport HD graphics. It was created to compete with the Xbox 360 and Playstation 3.","https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Wii_U_Console_and_Gamepad.png/330px-Wii_U_Console_and_Gamepad.png"],
     ["2013 - Nintendo 2DS","The Nintendo 2DS was created for children 7 and under due to concerns of eye injuries cause from the 3D functions of the 3DS.","https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Nintendo-2DS-angle.jpg/330px-Nintendo-2DS-angle.jpg"],
     ["2013 - Xbox 1","The Xbox 1 faced criticism for its poor graphical quality in comparison to the Playstation 4. ","https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Microsoft-Xbox-One-Console-Set-wKinect.jpg/450px-Microsoft-Xbox-One-Console-Set-wKinect.jpg"],
     ["2013 - Playstation 4","The Playstation 4 was created to emphasize social interaction and was subsequently praised for acknowledging the want of the user base.  ","https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/PS4-Console-wDS4.png/330px-PS4-Console-wDS4.png"],
@@ -41,23 +42,24 @@ Consoles = [
 ];
 
 var consolesHTML = "";
-
-for(let i = 0; i < Consoles.length; i++){
-    consolesHTML += "<div class='col-12 col-sm-12 col-md-6 col-lg-4'>\
-                        <div class='border border-3 rounded-4 border-primary p-3 m-3 bg-light'>\
-                            <h2 class='text-danger text-center'>";
-    for (let j = 0; j < Consoles[i].length; j++) {
-        if (j == 0){
-            consolesHTML += Consoles[i][j] + "</h2> <p class='text-muted'>";
+if (document.getElementById("consoleHTML")) {
+    for(let i = 0; i < Consoles.length; i++){
+        consolesHTML += "<div class='col-12 col-sm-12 col-md-6 col-lg-4'>\
+                            <div class='border border-3 rounded-4 border-primary p-3 m-3 bg-light'>\
+                                <h2 class='text-danger text-center'>";
+        for (let j = 0; j < Consoles[i].length; j++) {
+            if (j == 0){
+                consolesHTML += Consoles[i][j] + "</h2> <p class='text-muted'>";
+            }
+            if (j == 1){
+                consolesHTML += Consoles[i][j] + "</p> <img src='";
+            }
+            if (j == 2) {
+                consolesHTML += Consoles[i][j] + "' alt='Console' width='300px' height='300px'></img>"
+            }
         }
-        if (j == 1){
-            consolesHTML += Consoles[i][j] + "</p> <img src='";
-        }
-        if (j == 2) {
-            consolesHTML += Consoles[i][j] + "' alt='Console' width='300px'></img>"
-        }
+        consolesHTML += "</div> </div>"
     }
-    consolesHTML += "</div> </div>"
-}
 
-document.getElementById("consoleHTML").innerHTML = consolesHTML;
+    document.getElementById("consoleHTML").innerHTML = consolesHTML;
+}
