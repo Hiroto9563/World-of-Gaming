@@ -1,10 +1,4 @@
 "use strict;"
-if (document.getElementById("worldofConsoles")) {
-    document.getElementById("worldOfConsoles").innerHTML = "<h2 class='text-primary text-center'>World of Consoles</h2><p class='text-muted'>The first offical console was the Magnovox Odyssey. This console was of similar size to an old CRT monitor. Sonic wouldve had a blast with it but he was released until 19 years later. The consoles of the past were far larger than todays, much like how games you could play were very limited in comparision. Despite these limitations, early consoles set in motion a movement that would result in motion one of the largest industries in the world. Take a look at the consoles of the past as well as those of the present and gain a deeper apprication of the history and growth that the systems we play on have undergone. </p>";
-    document.getElementById("worldOfGames").innerHTML = "<h2 class='text-primary text-center'>World of Games</h2><p class='text-muted'>The first ever video game was Tennis for two and was created years before the first console. The machine it was played on was of similar size to your car. What about the first game played on a console? That would be 12 different games, but the most widly known would probably be Pong, or Ping-Pong. Nowadays titles such as The Legend of Zelda Tears of the Kingdom or the recently released Super Mario Dreamland are common place and as a result we have lost our appriciation of the classics. Learn more about how far video games have come and what kind of changes occured over the course of their development. Sometimes the classics are better. </p>";
-    document.getElementById("ourPicks").innerHTML = "<h2 class='text-primary text-center'>Our Picks!</h2><p class='text-muted'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt quasi facilis sunt! Excepturi consequatur eos porro magnam nam dicta, mollitia unde illum at, accusantium delectus. Eos tempora saepe asperiores fugiat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsam dolorem architecto nam rerum labore explicabo mollitia quis cumque ratione, minus ipsa, culpa provident laboriosam impedit distinctio fuga sed earum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt atque error, nemo temporibus voluptas officiis quam inventore! Hic cumque, recusandae eos harum soluta amet qui laboriosam eveniet fugiat optio at.</p>";
-    document.getElementById("whatsNew").innerHTML = "<h2 class='text-primary text-center'>What's New?</h2><p class='text-muted'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt quasi facilis sunt! Excepturi consequatur eos porro magnam nam dicta, mollitia unde illum at, accusantium delectus. Eos tempora saepe asperiores fugiat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsam dolorem architecto nam rerum labore explicabo mollitia quis cumque ratione, minus ipsa, culpa provident laboriosam impedit distinctio fuga sed earum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt atque error, nemo temporibus voluptas officiis quam inventore! Hic cumque, recusandae eos harum soluta amet qui laboriosam eveniet fugiat optio at.</p>";
-}
 
 Consoles = [
     ["1972 - Magnavox Odyssey ","The Magnavox Odyssey was the first-ever home console. It was created by Sanders Associates and sold 350,000 units by the time it was discontinued in 1975. ","https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Magnavox-Odyssey-Console-Set.jpg/330px-Magnavox-Odyssey-Console-Set.jpg"],
@@ -55,11 +49,189 @@ if (document.getElementById("consoleHTML")) {
                 consolesHTML += Consoles[i][j] + "</p> <img src='";
             }
             if (j == 2) {
-                consolesHTML += Consoles[i][j] + "' alt='Console' width='300px' height='300px'></img>"
+                consolesHTML += Consoles[i][j] + "' alt='Console' width='350px' height='350px'></img>"
             }
         }
         consolesHTML += "</div> </div>"
     }
 
     document.getElementById("consoleHTML").innerHTML = consolesHTML;
+}
+
+const Games = [
+  ["1958 - Tennis for Two", 
+   "Considered one of the first video games, Tennis for Two was developed by physicist William Higinbotham. The game was displayed on an oscilloscope and allowed two players to simulate a tennis match.", 
+   "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Tennis_For_Two_on_a_DuMont_Lab_Oscilloscope_Type_304-A.jpg/330px-Tennis_For_Two_on_a_DuMont_Lab_Oscilloscope_Type_304-A.jpg"],
+
+  ["1962 - Spacewar!", 
+   "Created by MIT students, Spacewar! is one of the earliest known digital computer games. Two players controlled spaceships engaged in a dogfight while avoiding gravitational pull from a central star.", 
+   "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Spacewar_gameplay.jpg/330px-Spacewar_gameplay.jpg"],
+
+  ["1972 - Pong", 
+   "Developed by Atari, Pong became one of the earliest arcade hits. This simple table tennis simulation game popularized video gaming in arcades.", 
+   "https://upload.wikimedia.org/wikipedia/commons/6/62/Pong_Game_Test2.gif"],
+
+  ["1978 - Space Invaders", 
+   "A seminal arcade game developed by Tomohiro Nishikado, Space Invaders set the template for the shoot 'em up genre. Players control a cannon and must defeat waves of aliens.", 
+   "https://upload.wikimedia.org/wikipedia/en/2/20/SpaceInvaders-Gameplay.gif"],
+
+  ["1980 - Pac-Man", 
+   "Pac-Man, developed by Namco, became a cultural icon. Players navigate Pac-Man through mazes, eating pellets and avoiding ghosts. It introduced iconic characters and widespread appeal.", 
+   "https://upload.wikimedia.org/wikipedia/en/5/59/Pac-man.png"],
+
+  ["1981 - Donkey Kong", 
+   "One of Nintendo’s earliest hits, Donkey Kong introduced characters like Jumpman (later known as Mario) and the titular Donkey Kong in a challenging platforming game.", 
+   "https://upload.wikimedia.org/wikipedia/en/f/fd/Donkey_Kong_Gameplay.png"],
+
+  ["1983 - Dragon's Lair", 
+   "A groundbreaking laserdisc arcade game that featured full-motion video graphics. Players guide a knight through quick-time events, pioneering a new form of interactive storytelling.", 
+   "https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/ARC_Dragon%27s_Lair.png/330px-ARC_Dragon%27s_Lair.png"],
+
+  ["1985 - Super Mario Bros.", 
+   "A landmark title developed by Nintendo, Super Mario Bros. revolutionized the platformer genre. Players control Mario as he embarks on a quest to save Princess Peach from Bowser.", 
+   "https://upload.wikimedia.org/wikipedia/en/5/50/NES_Super_Mario_Bros.png"],
+
+  ["1986 - The Legend of Zelda", 
+   "Nintendo's action-adventure game featured an open world for players to explore. It introduced key elements such as dungeons, puzzles, and exploration that defined the series.", 
+   "https://upload.wikimedia.org/wikipedia/en/3/3a/Legend_of_Zelda_NES.PNG"],
+
+  ["1987 - Final Fantasy", 
+   "The first entry in the long-running RPG series, Final Fantasy set the stage for decades of role-playing adventures with its innovative mechanics and epic storytelling.", 
+   "https://upload.wikimedia.org/wikipedia/en/0/04/Final_Fantasy_I_Lich_Battle.png"],
+
+  ["1989 - Tetris", 
+   "A puzzle game created by Soviet software engineer Alexey Pajitnov. Tetris tasks players with arranging falling blocks to complete lines. It became one of the most popular games of all time.", 
+   "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Typical_Tetris_Game.svg/330px-Typical_Tetris_Game.svg.png"],
+
+  ["1991 - Sonic the Hedgehog", 
+   "Sega's Sonic the Hedgehog introduced a speedy mascot to compete with Nintendo’s Mario. The game’s fast-paced platforming and vibrant art made it an instant hit.", 
+   "https://upload.wikimedia.org/wikipedia/en/d/d3/MD_Sonic_the_Hedgehog.png"],
+
+  ["1992 - Mortal Kombat", 
+   "Known for its intense, graphic violence and revolutionary digitized graphics, Mortal Kombat became a landmark in fighting games and sparked debates over video game violence.", 
+   "https://upload.wikimedia.org/wikipedia/en/thumb/2/22/Mortal_Kombat.png/330px-Mortal_Kombat.png"],
+
+  ["1993 - Doom", 
+   "Doom is often credited with popularizing the first-person shooter genre. Its fast-paced gameplay, 3D graphics, and multiplayer mode helped it become a major hit.", 
+   "https://upload.wikimedia.org/wikipedia/en/d/de/Doom_ingame_1.png"],
+
+  ["1994 - Donkey Kong Country", 
+   "A visually impressive platformer that pushed the limits of the Super Nintendo’s hardware. Donkey Kong Country used pre-rendered 3D graphics to create lifelike animations.", 
+   "https://upload.wikimedia.org/wikipedia/en/3/30/Donkey_Kong_Country_Shot_2.png"],
+
+  ["1996 - Pokémon Red/Blue", 
+   "Released for the Game Boy, Pokémon Red/Blue kickstarted a global phenomenon. Players capture and train creatures called Pokémon and battle to become the Pokémon Champion.", 
+   "https://upload.wikimedia.org/wikipedia/en/a/aa/Pok%C3%A9mon_Red%2C_Blue%2C_and_Yellow_screenshot.png"],
+
+  ["1996 - Resident Evil", 
+   "The game that defined the survival horror genre, Resident Evil introduced players to tense gameplay, limited resources, and a haunting atmosphere in the zombie-infested Spencer Mansion.", 
+   "https://upload.wikimedia.org/wikipedia/en/8/89/Resident_Evil_original_version.png"],
+
+  ["1997 - Final Fantasy VII", 
+   "Final Fantasy VII brought RPGs into the mainstream with its cinematic storytelling, memorable characters, and pre-rendered backgrounds, making it one of the most beloved games of all time.", 
+   "https://upload.wikimedia.org/wikipedia/en/1/1b/FFVIIbattleexample.png"],
+
+  ["1998 - The Legend of Zelda: Ocarina of Time", 
+   "Hailed as one of the greatest video games of all time, Ocarina of Time brought the Zelda franchise into 3D. Its expansive world, storytelling, and mechanics were groundbreaking.", 
+   "https://upload.wikimedia.org/wikipedia/en/thumb/a/a1/OcarinaOfTimeBattle.JPG/300px-OcarinaOfTimeBattle.JPG"],
+
+  ["1999 - Counter-Strike", 
+   "Starting as a Half-Life mod, Counter-Strike became a defining competitive first-person shooter with its emphasis on team-based tactics and skill, becoming a mainstay in esports.", 
+   "https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Counter-Strike_screenshot.png/220px-Counter-Strike_screenshot.png"],
+
+  ["2001 - Halo: Combat Evolved", 
+   "Halo: Combat Evolved launched with the original Xbox, setting a new standard for first-person shooters. Its engaging story, multiplayer, and controls made it a defining game of its era.", 
+   "https://upload.wikimedia.org/wikipedia/en/thumb/2/23/Halo_-_Combat_Evolved_%28screencap%29.jpg/330px-Halo_-_Combat_Evolved_%28screencap%29.jpg"],
+
+  ["2001 - Grand Theft Auto III", 
+   "This open-world action game from Rockstar Games redefined sandbox games, offering players unprecedented freedom in a 3D environment where they could interact with a living city.", 
+   "https://upload.wikimedia.org/wikipedia/en/thumb/0/00/Gta3-pc-walking.jpeg/330px-Gta3-pc-walking.jpeg"],
+
+  ["2003 - Call of Duty", 
+   "Call of Duty introduced players to immersive World War II battles, with intense first-person action and squad-based gameplay. It launched one of the most successful game franchises ever.", 
+   "https://upload.wikimedia.org/wikipedia/en/thumb/3/32/CallDuty1PC.jpg/315px-CallDuty1PC.jpg"],
+
+  ["2004 - World of Warcraft", 
+   "Blizzard's World of Warcraft revolutionized the MMORPG genre. It immersed millions of players in a vast fantasy world where they could embark on quests, battle monsters, and interact with others online.", 
+   "https://www.gamespot.com/a/uploads/original/gamespot/images/2004/reviews/624406-534914_20041129_004.jpg"],
+
+  ["2007 - BioShock", 
+   "BioShock combined immersive storytelling with philosophical themes and a unique underwater setting. Players explore the dystopian city of Rapture while making moral choices that affect the game’s outcome.", 
+   "https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Bioshock_enemies.jpg/330px-Bioshock_enemies.jpg"],
+
+  ["2007 - Portal", 
+   "A puzzle-platformer from Valve, Portal is praised for its innovative gameplay and humorous writing. Players use a portal gun to solve physics-based puzzles in a testing facility.", 
+   "https://upload.wikimedia.org/wikipedia/en/7/7e/Portalgame.jpg"],
+
+  ["2010 - Red Dead Redemption", 
+   "A critically acclaimed open-world Western game developed by Rockstar Games. It tells the story of John Marston, a former outlaw trying to start a new life, set in a beautifully crafted world.", 
+   "https://upload.wikimedia.org/wikipedia/en/c/c4/Red_Dead_Redemption_-_Jack_Marston_as_an_outlaw.jpg"],
+
+  ["2011 - The Elder Scrolls V: Skyrim", 
+   "Bethesda’s open-world RPG allows players to explore a massive fantasy realm filled with dragons, quests, and endless customization. Skyrim remains a fan favorite thanks to its vast modding community.", 
+   "https://upload.wikimedia.org/wikipedia/en/6/68/Skyrim_game_world.jpg"],
+
+  ["2013 - The Last of Us", 
+   "This post-apocalyptic action-adventure game from Naughty Dog is renowned for its emotional storytelling, memorable characters, and intense survival mechanics. It follows Joel and Ellie as they navigate a dangerous world.", 
+   "https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/The_Last_of_Us_Listen_Mode.jpg/390px-The_Last_of_Us_Listen_Mode.jpg"],
+
+  ["2013 - Grand Theft Auto V", 
+   "The latest entry in Rockstar’s open-world crime series, Grand Theft Auto V is known for its sprawling world, dynamic storytelling, and online multiplayer, Grand Theft Auto Online.", 
+   "https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/Grand_Theft_Auto_V_combat.jpg/330px-Grand_Theft_Auto_V_combat.jpg"],
+
+  ["2015 - The Witcher 3: Wild Hunt", 
+   "Praised for its deep narrative, stunning world, and complex characters, The Witcher 3 is an open-world RPG that follows Geralt of Rivia on his quest to find his adopted daughter.", 
+   "https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/Witcher3Gameplay.png/330px-Witcher3Gameplay.png"],
+
+  ["2016 - Overwatch", 
+   "Blizzard’s team-based first-person shooter introduced a diverse cast of heroes with unique abilities, emphasizing teamwork and strategy. It quickly became a staple in the competitive gaming scene.", 
+   "https://upload.wikimedia.org/wikipedia/en/thumb/e/ea/Overwatch_screenshot.png/330px-Overwatch_screenshot.png"],
+
+  ["2017 - The Legend of Zelda: Breath of the Wild", 
+   "Breath of the Wild redefined open-world exploration by giving players immense freedom in a beautifully crafted, physics-driven environment. It is regarded as one of the best games ever made.", 
+   "https://upload.wikimedia.org/wikipedia/en/thumb/b/b3/Breath_of_the_Wild_paraglide.jpg/330px-Breath_of_the_Wild_paraglide.jpg"],
+
+  ["2017 - Fortnite", 
+   "Fortnite popularized the battle royale genre with its fast-paced, last-person-standing gameplay. Its free-to-play model and frequent updates make it a global phenomenon.", 
+   "https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/Building_in_Fortnite.png/330px-Building_in_Fortnite.png"],
+
+  ["2018 - God of War", 
+   "This action-adventure game reimagined the God of War series, focusing on a more mature narrative with Kratos and his son Atreus exploring Norse mythology. It won numerous Game of the Year awards.", 
+   "https://upload.wikimedia.org/wikipedia/en/3/37/God_of_War_%282018%29_Leviathan_Axe_gameplay.gif"],
+
+  ["2020 - Animal Crossing: New Horizons", 
+   "This life-simulation game was a massive hit during the pandemic, offering a relaxing and customizable experience. Players develop their island, interact with villagers, and trade with others online.", 
+   "https://upload.wikimedia.org/wikipedia/en/thumb/6/6c/Animal_Crossing_New_Horizons_Gameplay.jpg/330px-Animal_Crossing_New_Horizons_Gameplay.jpg"],
+
+  ["2022 - Elden Ring", 
+   "FromSoftware’s open-world RPG combined the studio’s signature tough gameplay with expansive exploration. Elden Ring became a critical and commercial success with its rich lore and challenge.", 
+   "https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/Elden_Ring_gameplay.png/330px-Elden_Ring_gameplay.png"],
+
+  ["2023 - The Legend of Zelda: Tears of the Kingdom", 
+   "The highly anticipated sequel to Breath of the Wild, this game expands on the vast open-world concept, introducing new mechanics like sky islands and the ability to fuse items.", 
+   "https://upload.wikimedia.org/wikipedia/en/thumb/2/22/Tears_of_the_kingdom_contraptions.jpg/330px-Tears_of_the_kingdom_contraptions.jpg"]
+];
+
+
+var gamesHTML = "";
+if (document.getElementById("gameHTML")) {
+    for(let i = 0; i < Games.length; i++){
+        gamesHTML += "<div class='col-12 col-sm-12 col-md-6 col-lg-4'>\
+                            <div class='border border-3 rounded-4 border-primary p-3 m-3 bg-light'>\
+                                <h2 class='text-danger text-center'>";
+        for (let j = 0; j < Games[i].length; j++) {
+            if (j == 0){
+                gamesHTML += Games[i][j] + "</h2> <p class='text-muted'>";
+            }
+            if (j == 1){
+                gamesHTML += Games[i][j] + "</p> <img src='";
+            }
+            if (j == 2) {
+                gamesHTML += Games[i][j] + "' alt='Console' width='350px' height='350px'></img>"
+            }
+        }
+        gamesHTML += "</div> </div>"
+    }
+
+    document.getElementById("gameHTML").innerHTML = gamesHTML;
 }
