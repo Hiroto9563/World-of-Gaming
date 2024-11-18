@@ -49,7 +49,7 @@ if (document.getElementById("consoleHTML")) {
                 consolesHTML += Consoles[i][j] + "</p> <img src='";
             }
             if (j == 2) {
-                consolesHTML += Consoles[i][j] + "' alt='Console' width='350px' height='350px'></img>"
+                consolesHTML += Consoles[i][j] + "' alt='Console' style='width=80%'; height=auto display:block; margin:0 auto;'></img>"
             }
         }
         consolesHTML += "</div> </div>"
@@ -213,6 +213,7 @@ const Games = [
 ];
 
 
+
 var gamesHTML = "";
 if (document.getElementById("gameHTML")) {
     for(let i = 0; i < Games.length; i++){
@@ -234,4 +235,64 @@ if (document.getElementById("gameHTML")) {
     }
 
     document.getElementById("gameHTML").innerHTML = gamesHTML;
+}
+
+const OurPicks = [
+    ["XBOX - Assassin's Creed", 
+     "the Assassin's Creed video game series depicts a fictional millennia-old struggle between the Order of Assassins, who fight for peace and free will, and the Knights Templar, who desire peace through order and control.", 
+     "https://youtu.be/zKua34QXhMA"],
+  
+    ["PC - Elden Ring", 
+     "Elden Ring is a dark fantasy RPG videogame, winner of over 300 Game of the Year awards. A world that was born of a collaboration between George R.R. Martin, best-selling author best known for Game of Thrones, and Hidetaka Miyazaki, creator of the Dark Souls video game series.", 
+     "https://youtu.be/AKXiKBnzpBQ?si=gXXEuG67eO151hJD"],
+  
+    ["PS5 - Dead Space", 
+     "Set on a mining spaceship overrun by deadly monsters called Necromorphs following the discovery of an artifact called the Marker, the player controls engineer Isaac Clarke as he navigates the spaceship and fights the Necromorphs while struggling with growing psychosis.", 
+     "https://youtu.be/ctQl9wa3ydE?si=FAZS-xLwW3ein7da"],
+  
+    ["Switch - Mario Cart", 
+     "Mulitplayer players controlling a Mario character in races around tracks. Tracks are themed around locales from the Super Mario series populated with power-ups that help players gain advantages in races.", 
+     "https://youtu.be/tKlRN2YpxRE?si=M2ld4Tm35KdXVAJu"],
+
+     ["VR - Half Life: Alyx", 
+        "Earth has been conquered by the alien Combine, who have implemented a brutal police state.[9] In City 17, Alyx Vance (Ozioma Akagha) and her father Eli (James Moses Black) are arrested by Combine forces as part of a crackdown on the Resistance.", 
+        "https://youtu.be/3uKUSnY0HVs?si=z4GzX0m8majaUCuX"],
+
+    ["Mobile - Slay the spire", 
+        "In Slay the Spire, the player attempts to ascend a spire of multiple floors created through procedural generation as one of four characters, battling through enemies and bosses.", 
+        "https://www.youtube.com/watch?v=EQgbV9Dc6bQ"]
+
+];
+
+var consolesHTMLPicks = "";
+if (document.getElementById("consoleHTMLPicks")) {
+    for (let i = 0; i < OurPicks.length; i++) {
+        consolesHTMLPicks += "<div class='col-12 col-sm-12 col-md-6 col-lg-6'>\
+                            <div id='youtube' class='border border-3 rounded-4 border-primary p-3 m-3 bg-light'>\
+                                <h2 class='text-danger text-center'>";
+        for (let j = 0; j < OurPicks[i].length; j++) {
+            if (j == 0) {
+                consolesHTMLPicks += OurPicks[i][j] + "</h2> <p id='youtubetext' class='text-muted'>";
+            }
+            if (j == 1) {
+                consolesHTMLPicks += OurPicks[i][j] + "</p>";
+            }
+            if (j == 2) {
+                // Assume OurPicks[i][2] is a valid YouTube URL
+                let videoURL = OurPicks[i][2];
+
+                // Convert YouTube URLs to embeddable format if needed
+                if (videoURL.includes('youtube.com/watch?v=')) {
+                    videoURL = videoURL.replace('watch?v=', 'embed/');
+                } else if (videoURL.includes('youtu.be/')) {
+                    videoURL = videoURL.replace('youtu.be/', 'youtube.com/embed/');
+                }
+
+                consolesHTMLPicks += "<iframe width='auto' height='auto' src='" + videoURL + "' frameborder='0' allowfullscreen></iframe>";
+            }
+        }
+        consolesHTMLPicks += "</div> </div>";
+    }
+
+    document.getElementById("consoleHTMLPicks").innerHTML = consolesHTMLPicks;
 }

@@ -5,7 +5,7 @@
 
 
     //finally we can start querying out database.
-    $sql = "SELECT different_paragraphs FROM paragraph WHERE pri_number = 2";
+    $sql = "SELECT different_paragraphs FROM paragraph WHERE pri_number = 1";
     $result = $mysqlconnect->query($sql);
 
 
@@ -24,7 +24,7 @@
 
         //can run echo to make sure all is coming out correct.
         //echo htmlspecialchars($paragraphContent);
-        echo '<p class="text-muted">' . htmlspecialchars($paragraphContent) . '</p>';
+        echo '<p id="new" class="text-muted">' . htmlspecialchars($paragraphContent) . '</p>';
 
     } else {
         echo "No results found.";

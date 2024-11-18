@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="Feedback.js" defer></script>
     <script src="Content.js" defer></script>
-    <script src="myScript.js" defer></script>
+    <script src="post.js" defer></script>
     <link rel="stylesheet" href="Misc.css">
 </head>
 
@@ -43,34 +43,11 @@
         </div> 
     </nav>
     <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <div class="border border-3 rounded-4 border-primary p-3 m-3 bg-light">
-                        <h2 class="text-danger text-center">Placeholder</h2>
-                        <p class="text-muted" id="txtHint">   </p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="border border-3 rounded-4 border-primary p-3 m-3 bg-light">
-                        <h2 class="text-info text-center">Placeholder</h2>
-                        <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt quasi facilis sunt! Excepturi consequatur eos porro magnam nam dicta, mollitia unde illum at, accusantium delectus. Eos tempora saepe asperiores fugiat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsam dolorem architecto nam rerum labore explicabo mollitia quis cumque ratione, minus ipsa, culpa provident laboriosam impedit distinctio fuga sed earum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt atque error, nemo temporibus voluptas officiis quam inventore! Hic cumque, recusandae eos harum soluta amet qui laboriosam eveniet fugiat optio at.</p>
-                    </div>
-                </div>             
+        <div class="container">
+            <div class="row" id="consoleHTMLPicks">
+             
             </div>
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <div class="border border-3 rounded-4 border-primary p-3 m-3 bg-light">
-                        <h2 class="text-danger text-center">Placeholder</h2>
-                        <p class="text-muted" id="txtHint">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt quasi facilis sunt! Excepturi consequatur eos porro magnam nam dicta, mollitia unde illum at, accusantium delectus. Eos tempora saepe asperiores fugiat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsam dolorem architecto nam rerum labore explicabo mollitia quis cumque ratione, minus ipsa, culpa provident laboriosam impedit distinctio fuga sed earum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt atque error, nemo temporibus voluptas officiis quam inventore! Hic cumque, recusandae eos harum soluta amet qui laboriosam eveniet fugiat optio at.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="border border-3 rounded-4 border-primary p-3 m-3 bg-light">
-                        <h2 class="text-info text-center">Placeholder</h2>
-                        <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt quasi facilis sunt! Excepturi consequatur eos porro magnam nam dicta, mollitia unde illum at, accusantium delectus. Eos tempora saepe asperiores fugiat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsam dolorem architecto nam rerum labore explicabo mollitia quis cumque ratione, minus ipsa, culpa provident laboriosam impedit distinctio fuga sed earum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt atque error, nemo temporibus voluptas officiis quam inventore! Hic cumque, recusandae eos harum soluta amet qui laboriosam eveniet fugiat optio at.</p>
-                    </div>
-                </div>             
-            </div>
+        </div>
     </div>
 </body>
 <footer class="bg-danger" id="feet">
@@ -78,7 +55,7 @@
         <div class="row">
             <div class="col-12 col-md-6">
                 <h2>Contact Us!</h2>
-                <form novalidate action="contactus.php" method="post">
+                <form id="contactForm" novalidate method="post">
                     <div class="form-floating mb-3">
                         <input name="email" type="email" id="email" class="form-control" placeholder="Email" required>
                         <label for="email">Email</label>

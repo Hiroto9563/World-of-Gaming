@@ -6,7 +6,7 @@ function moby() {
     xmlhttp.onreadystatechange = function() {
         if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
             // Update the content of the <p> element with the response from random.php
-            document.getElementById("txtHint").innerHTML = xmlhttp.responseText;
+            document.getElementById("new").innerHTML = xmlhttp.responseText;
         }
     };
 

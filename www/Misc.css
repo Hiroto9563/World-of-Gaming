@@ -11,59 +11,77 @@
 }
 
 #myVideo {
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 1;
     width: 100%;
   }
 
 
-  .content {
-    position: fixed;
-    bottom: 1;
+.content {
+    position: relative;
+    bottom: 0;
     color: #0f0101;
     width: 100%;
+    height: auto;
 
   }
 
 #tron {
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
 }
 
-#feet {
-
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding-top: 10px;
-
-  }
-
-  .btn-primary {
-    padding-bottom: 10px;
-  }
-
-
-
-
-  #test1 {
-    background-color:black;
-    opacity: .8;
-    color: rgb(7, 5, 5);
-  }
-
- 
-
-  #test2 {
-    color: white;
-  }
-
-  #test3 {
-    color: white;
-  }
-
-  #indexBox {
+#indexBox {
     justify-content: center;
+
   }
+
+
+
+#test0 {
+    color: white;
+    background-color: black;
+    opacity: .8;
+
+}
+
+
+
+.border {
+    border: none !important;
+}
+
+#test3 {
+    font-size: 24px;
+}
+
+#feet {
+    padding-bottom: 25px;
+    margin-bottom: 0px;
+}
+
+
+
+#youtube {
+    justify-items: center;
+    background-color: black !important;
+
+}
+
+#youtubetext {
+    color: white !important;
+    background: black;
+}
+
+#new {
+    font-size: 25px;
+    background-color: black;
+    color: white !important;
+}
+
+#anew {
+    color: white !important;
+    background-color: black !important;
+    opacity: .7;
+}

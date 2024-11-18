@@ -13,7 +13,7 @@
     if ($mysqlconnect === false) {
         die("Connection bad.");
     } else {
-        echo("Connection good.");
+        //echo("Connection good.");
         //if all is good, we fly through this
     }
 
